@@ -1,4 +1,4 @@
-const UA = navigator.userAgent;
+export const UA = navigator.userAgent;
 export const isWebkit =
   /\b(iPad|iPhone|iPod)\b/.test(UA) &&
   /WebKit/.test(UA) &&
