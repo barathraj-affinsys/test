@@ -1,6 +1,9 @@
-export const UA = navigator.userAgent;
+// const macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"];
+// const iosPlatforms = ["iPhone", "iPad", "iPod"];
+
+export const UA = navigator && navigator.userAgent ? navigator.userAgent : "";
 export const isWebkit =
-  /\b(iPad|iPhone|iPod)\b/.test(UA) &&
+  /\b(iPad|iPhone|iPod|Macintosh|MacIntel|MacPPC|Mac68K)\b/.test(UA) &&
   /WebKit/.test(UA) &&
   !/Edge/.test(UA) &&
   !window.MSStream;
